@@ -1,30 +1,40 @@
 # Douyin Lite
 
-Ứng dụng Windows nội bộ, chỉ gồm hai chức năng:
+Ứng dụng Windows hỗ trợ đăng nhập Douyin để lưu cookie và tải video theo liên kết.
 
-- Mở Chrome để đăng nhập Douyin và xuất `cookies.txt`.
-- Tải một hoặc nhiều video Douyin theo link, hỗ trợ chất lượng cao nhất và H.264.
+> Phiên bản này không có Whisper và GPT.
 
-Không bao gồm Whisper, OpenAI, GPT hoặc các model AI.
+## Yêu cầu
 
-## Tải bản Windows
+- Windows 10 hoặc Windows 11.
+- Google Chrome.
+- Kết nối Internet.
 
-File chạy sẵn nằm tại `dist/DouyinLite.exe`.
+## Tải ứng dụng
 
-## Cách sử dụng
+Tải file `dist/DouyinLite.exe` trong repository và mở trực tiếp, không cần cài đặt.
+
+## Hướng dẫn sử dụng
 
 1. Mở `DouyinLite.exe`.
-2. Bấm **Mở Chrome để đăng nhập**.
-3. Đăng nhập hoặc xác minh trên Douyin.
-4. Quay lại ứng dụng và bấm **Lưu cookie và đóng Chrome**.
-5. Dán link Douyin, mỗi link một dòng, rồi bấm **TẢI VIDEO**.
+2. Chọn **Mở Chrome để đăng nhập**.
+3. Đăng nhập hoặc hoàn thành xác minh trên Douyin.
+4. Quay lại ứng dụng và chọn **Lưu cookie và đóng Chrome**.
+5. Dán liên kết video Douyin vào ô nhập liệu. Có thể nhập nhiều liên kết, mỗi liên kết một dòng.
+6. Chọn chất lượng tải xuống rồi nhấn **Tải video**.
 
-Dữ liệu cá nhân được lưu cục bộ tại `Documents\DouyinLite` và không được đưa vào repository.
+## Dữ liệu và file tải xuống
 
-## Build
+Dữ liệu của ứng dụng được lưu trong thư mục `Documents\DouyinLite`:
 
-```powershell
-python -m PyInstaller --noconfirm --clean DouyinLite.spec
-```
+- `cookies.txt`: cookie đăng nhập.
+- `browser_profile`: dữ liệu trình duyệt dùng khi đăng nhập.
+- `downloads`: video đã tải.
 
-Ứng dụng yêu cầu Windows và Google Chrome. File EXE là gói một file tạo bằng PyInstaller; đây không phải cơ chế chống dịch ngược tuyệt đối.
+Không chia sẻ file cookie hoặc thư mục hồ sơ trình duyệt cho người khác.
+
+## Lưu ý
+
+- Một số liên kết có thể yêu cầu đăng nhập hoặc xác minh lại.
+- Chất lượng tải xuống phụ thuộc vào phiên bản video mà Douyin cung cấp cho tài khoản tại thời điểm tải.
+- Chỉ tải và sử dụng nội dung khi bạn có quyền phù hợp.

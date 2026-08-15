@@ -1,24 +1,36 @@
 DOUYIN LITE
 ===========
 
-Chức năng:
-- Mở Chrome để đăng nhập Douyin và xuất cookies.txt.
-- Tải một hoặc nhiều video theo link.
-- Chọn chất lượng cao nhất, H.264 tương thích hoặc mặc định.
-- Không có Whisper, OpenAI hoặc GPT.
+Ứng dụng Windows hỗ trợ đăng nhập Douyin để lưu cookie và tải video theo liên kết.
 
-Dữ liệu được lưu tại:
-Documents\DouyinLite\
-  cookies.txt
-  browser_profile\
-  downloads\
+Ghi chú: Phiên bản này không có Whisper và GPT.
 
-Cách dùng:
-1. Bấm "Mở Chrome để đăng nhập".
-2. Đăng nhập/xác minh trên Chrome.
-3. Quay lại ứng dụng, bấm "Lưu cookie và đóng Chrome".
-4. Dán link Douyin, mỗi link một dòng, rồi bấm "TẢI VIDEO".
+YÊU CẦU
+-------
+- Windows 10 hoặc Windows 11.
+- Google Chrome.
+- Kết nối Internet.
 
-Lưu ý bảo vệ mã nguồn:
-File EXE được đóng gói từ bytecode Python. Đây là lớp bảo vệ phân phối thông
-thường, không phải mã hóa chống dịch ngược tuyệt đối.
+CÁCH SỬ DỤNG
+-------------
+1. Mở dist\DouyinLite.exe.
+2. Chọn "Mở Chrome để đăng nhập".
+3. Đăng nhập hoặc hoàn thành xác minh trên Douyin.
+4. Quay lại ứng dụng và chọn "Lưu cookie và đóng Chrome".
+5. Dán liên kết video. Có thể nhập nhiều liên kết, mỗi liên kết một dòng.
+6. Chọn chất lượng rồi nhấn "Tải video".
+
+DỮ LIỆU
+-------
+Dữ liệu được lưu trong Documents\DouyinLite:
+- cookies.txt: cookie đăng nhập.
+- browser_profile: dữ liệu trình duyệt dùng khi đăng nhập.
+- downloads: video đã tải.
+
+Không chia sẻ cookie hoặc hồ sơ trình duyệt cho người khác.
+
+LƯU Ý
+-----
+- Một số liên kết có thể yêu cầu đăng nhập hoặc xác minh lại.
+- Chất lượng phụ thuộc vào phiên bản video Douyin cung cấp tại thời điểm tải.
+- Chỉ tải và sử dụng nội dung khi bạn có quyền phù hợp.
