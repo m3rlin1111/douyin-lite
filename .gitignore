@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+build/
+*.spec.bak
+.pytest_cache/
+.idea/
+.vscode/
+
+# Sensitive/local runtime data
+.env
+cookies.txt
+browser_profile/
+downloads/
+DouyinLite/
+*.part
+
+# Local source code (binary-only public/release repository)
+douyin_lite.py
+
+# Test data
+.test_data/
